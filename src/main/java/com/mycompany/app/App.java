@@ -6,8 +6,16 @@ package com.mycompany.app;
  */
 public class App 
 {
+    String addNonsense(String inputstring)
+    {
+        return (inputstring+" nonsense");
+    }
     public static void main( String[] args )
     {
-        System.out.println( "Hello maven!" );
+        App foo = new App();
+        System.out.println(foo.addNonsense("testing"));
     }
+
+
+
 }

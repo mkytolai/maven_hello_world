@@ -33,6 +33,9 @@ public class AppTest
      */
     public void testApp()
     {
-        assertTrue( true );
+        App testApp = new App();
+
+        assertEquals(testApp.addNonsense(""), " nonsense");
+        assertEquals(testApp.addNonsense("test"), "test nonsense");
     }
 }
